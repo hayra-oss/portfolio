@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pink Glass Portfolio</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- AOS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4, #ffdde1);
+      color: #fff;
+    }
+
+    /* Glass Effect */
+    .glass {
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 20px;
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      box-shadow: 0 8px 32px rgba(255, 105, 180, 0.3);
+    }
+
+    .navbar {
+      background: rgba(255, 105, 180, 0.3) !important;
+      backdrop-filter: blur(10px);
+    }
+
+    .hero {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    .section-title {
+      margin-bottom: 40px;
+      font-weight: bold;
+      color: #ff4da6;
+    }
+
+    .card {
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px) scale(1.03);
+    }
+
+    input, textarea {
+      background: rgba(255,255,255,0.2) !important;
+      border: none !important;
+      color: #fff !important;
+    }
+
+    input::placeholder, textarea::placeholder {
+      color: #ffe6f0;
+    }
+
+    .btn-outline-light {
+      border-color: #ff4da6;
+      color: #ff4da6;
+    }
+
+    .btn-outline-light:hover {
+      background: #ff4da6;
+      color: #fff;
+    }
+
+    footer {
+      background: rgba(255, 105, 180, 0.4);
+      backdrop-filter: blur(10px);
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container glass p-2">
+    <a class="navbar-brand" href="#">MyPortfolio</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section id="home" class="hero">
+  <div class="glass p-5" data-aos="zoom-in">
+    <h1>Hello, I'm <span style="color:#ff4da6">Hayra</span></h1>
+    <p class="lead">Frontend Developer</p>
+    <button class="btn btn-outline-light mt-3">Explore</button>
+  </div>
+</section>
+
+<!-- About -->
+<section id="about" class="py-5">
+  <div class="container">
+    <h2 class="text-center section-title" data-aos="fade-up">About Me</h2>
+    <div class="row">
+      <div class="col-md-6" data-aos="fade-right">
+        <div class="glass p-4">
+          <p>
+  Hi, I'm <strong>Hayra</strong>, a passionate and creative Frontend Developer from India. I enjoy building modern, responsive, and visually attractive websites using HTML, CSS, Bootstrap, and JavaScript.
+  <br><br>
+  I love experimenting with new UI designs like glassmorphism and animations to make websites look unique and engaging. I am always eager to learn new technologies and improve my skills.
+  <br><br>
+  My goal is to become a professional web developer and create impactful digital experiences.
+</p>
+        </div>
+      </div>
+      <div class="col-md-6" data-aos="fade-left">
+        <div class="glass p-4">
+          <ul>
+            <li>HTML, CSS, JS</li>
+            <li>Bootstrap</li>
+            <li>AOS Animations</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="py-5">
+  <div class="container">
+    <h2 class="text-center section-title" data-aos="fade-up">Projects</h2>
+    <div class="row">
+      <div class="col-md-4" data-aos="zoom-in">
+        <div class="glass p-4">
+          <h5>Project 1</h5>
+          <p>Pink glass UI design</p>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+        <div class="glass p-4">
+          <h5>Project 2</h5>
+          <p>Responsive portfolio</p>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+        <div class="glass p-4">
+          <h5>Project 3</h5>
+          <p>Modern UI effects</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="py-5">
+  <div class="container">
+    <h2 class="text-center section-title" data-aos="fade-up">Contact</h2>
+    <form class="glass p-4" data-aos="fade-up">
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <input type="text" class="form-control" placeholder="Your Name">
+        </div>
+        <div class="col-md-6 mb-3">
+          <input type="email" class="form-control" placeholder="Your Email">
+        </div>
+      </div>
+      <div class="mb-3">
+        <textarea class="form-control" rows="4" placeholder="Message"></textarea>
+      </div>
+      <button class="btn btn-outline-light">Send</button>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>© 2026 Hayra Portfolio</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init();
+
+  document.querySelector('form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('Message sent!');
+  });
+</script>
+
+</body>
+</html>
